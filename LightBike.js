@@ -94,7 +94,7 @@ function logreglast() {
   base.removeChild(el);
   base.setHTML(`
     <section>
-      <h2 class="text" style="--tn: 1s; --sn: 5; --en: 3; --wn: 3.4em;">Stats</h2>
+      <h2 class="text" style="--tn: 1s; --sn: 5; --en: 3; --wn: 3.4em;">Stats \n 0 : 0</h2>
     </section>
     <section>
       <canvas id="game" width="800" height="800">
@@ -107,6 +107,7 @@ function logreglast() {
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+//var playerScores;
 
 function initialize() {
   canvas = document.getElementById("game");
@@ -114,6 +115,7 @@ function initialize() {
   setInterval(loop, 100);
   lastKey = null;
 }
+
 
 enemy = {
   type: "enemy",
@@ -163,6 +165,12 @@ game = {
     context.font = canvas.height / 18 + "px sans-serif";
     context.textAlign = "center";
     winner = cycle.type == "enemy" ? "PLAYER" : "ENEMY";
+    if (winner === "PLAYER") {
+      playerScores.player += 1;
+    }
+    else {
+      playerScores.enemy += 1;
+    }
     context.fillText(
       "GAME OVER - " + winner + " WINS",
       canvas.width / 2,
