@@ -1,0 +1,110 @@
+* {
+  text-align: center;
+  font-family: monospace;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  flex: 0 80px;
+}
+
+footer {
+  padding-top: 1em;
+  flex: 0 50px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+section:nth-child(1) {
+  flex: 1;
+  background-color: #222;
+}
+section:nth-child(2) {
+  flex: 4;
+  background-color: #333;
+}
+section:nth-child(3) {
+  flex: 1;
+  background-color: #222;
+}
+
+#game {
+  background-color: #000;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  padding-top: 1em;
+}
+input {
+  background: #000;
+  font-size: 18px;
+}
+button {
+  background: #000;
+  font-size: 18px;
+}
+
+@media (orientation: portrait) {
+  main {
+    flex-direction: column;
+  }
+}
+
+@media (max-height: 700px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+.text {
+  overflow: hidden;
+  border-right: 0.15em solid #fff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing var(--tn) steps(var(--sn), end),
+    blink-caret 0.5s step-end var(--en);
+  border-color: transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--wn);
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
