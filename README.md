@@ -8,3 +8,6 @@ figured out git, and how push pull commit -am -m "comment" and fetch and status 
 
 3/29/23 rokketranger:
 html is pretty wild! It's also really cool. Updated it to have a rick roll, but at the same time, I have learned so much about how websites are created. Lot of respect for web devs 
+
+4/1/23 rokketranger:
+implementing https: was a bit simpler than I thought. Although caddy is probably a lot more complex under the hood- but it's really cool that security is handled through certs. 
