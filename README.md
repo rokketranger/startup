@@ -11,3 +11,8 @@ html is pretty wild! It's also really cool. Updated it to have a rick roll, but 
 
 4/1/23 rokketranger:
 implementing https: was a bit simpler than I thought. Although caddy is probably a lot more complex under the hood- but it's really cool that security is handled through certs. 
+
+4/3/23 rokketranger:
+css is AMAZING
+I love how you can import stuff from @ url, this makes css essentially limitless. I went to apples website to see what they have under the hood and it is 
+absolutely magnificent. Like a palace. Inpsiration for sure
